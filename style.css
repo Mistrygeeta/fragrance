@@ -10,10 +10,6 @@ body{
     height: 100%;
 }
 
-.page1{
-    width: 100%;
-}
-
 .nav-slider{
     width: 100%;
     background-color:#375d77;
@@ -21,12 +17,12 @@ body{
     white-space: nowrap;
 }
 
-.page1 .slider{
+.slider{
     display: inline-block;
     animation: slider 10s infinite linear;
 }
 
-.page1 .slider h4{
+.slider h4{
     font-size: 15px;
     font-weight: 200px;
     padding: 10px 150px;
@@ -43,7 +39,15 @@ body{
     
 }
 
-.page1> h1{
+.page1{
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+}
+.page1 nav > h1{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
@@ -51,10 +55,10 @@ body{
    color:#b97d22;
 }
 
-.page1 > h1:hover{
+.page1 nav > h1:hover{
     cursor: pointer;
 }
-.page1 > p{
+.page1  nav > p{
     text-align: center;
     font-size: 25px;
     color: #b97d22;
@@ -62,16 +66,16 @@ body{
     padding-top: 5px;
 }
 
-.page1 > p:hover{
+.page1  nav > p:hover{
     cursor: pointer;
 }
 
- .navbar{
+nav >  .navbar{
     width: 100%;
     /* background-color: blue; */
 }
 
-.navbar > ul{
+ nav > .navbar > ul{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,22 +83,22 @@ body{
     gap: 30px;
     font-size: 20px;
     font-weight: 200;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
-.navbar > ul li{
+ nav > .navbar > ul li{
     border-bottom: 1px solid transparent;
-    transition: 1s all linear;
+    transition: 1s all ease-in-out;
 }
 
-.navbar > ul li:hover{
+ nav > .navbar > ul li:hover{
     border-bottom: 3px solid black;
     cursor: pointer;
 }
 
 .page1 > img{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 200px;
     padding: 20p 10px;
 }
 
@@ -110,6 +114,53 @@ body{
     text-align: center;
     font-size: 30px;
     font-weight: 300;
-    padding: 20px 30px;
+    padding: 20px 30px; 
     margin-top: 50px;
+}
+
+.page2 > .box{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box > .box1{
+    width: 20vw;
+    /* background-color: blue; */
+}
+
+.box img{
+    width: 20vw;
+}
+
+.box  h1{
+    font-size: 20px;
+    font-weight: 200;
+    padding: 5px 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.box p{
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.box button{
+    padding: 8px 20px;
+    margin: 10px 20px;
+    margin-left: 80px;
+    border-radius: 10px;
+    background-color: royalblue;
+    border: none;
+}
+
+.box button a{
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    text-decoration: none;
+
 }
