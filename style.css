@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, 
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.page1{
+    width: 100%;
+}
+
+.nav-slider{
+    width: 100%;
+    background-color:#375d77;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.page1 .slider{
+    display: inline-block;
+    animation: slider 10s infinite linear;
+}
+
+.page1 .slider h4{
+    font-size: 15px;
+    font-weight: 200px;
+    padding: 10px 150px;
+    color: white;
+}
+
+@keyframes slider {
+    from{
+        transform:translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+    
+}
+
+.page1> h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+   padding-top: 35px;
+   color:#b97d22;
+}
+
+.page1 > h1:hover{
+    cursor: pointer;
+}
+.page1 > p{
+    text-align: center;
+    font-size: 25px;
+    color: #b97d22;
+    font-weight: 200;
+    padding-top: 5px;
+}
+
+.page1 > p:hover{
+    cursor: pointer;
+}
+
+ .navbar{
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.navbar > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 20px;
+}
+
+.navbar > ul li{
+    border-bottom: 1px solid transparent;
+    transition: 1s all linear;
+}
+
+.navbar > ul li:hover{
+    border-bottom: 3px solid black;
+    cursor: pointer;
+}
+
+.page1 > img{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20p 10px;
+}
+
+.page1 img:hover{
+    cursor: pointer;
+}
+
+.page2{
+    width: 100%;
+}
+
+.page2 > h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 20px 30px;
+    margin-top: 50px;
+}
